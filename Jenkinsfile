@@ -48,11 +48,11 @@ pipeline {
         stage('Generate Application SBOM') {
             steps{
               script{
-                    env.ENTERPRISE_CONTAINER_BUILD_REPO = "localhost:5000"
-                    env.CONCERT_URL = "https://annie-concert1.fyre.ibm.com:12443"
-                    env.CONCERT_USERNAME = "ibmconcert"
-                    env.CONCERT_PASSWORD = "password"
-                    env.CONCERTCTL_CMDB_URL = "http://127.0.0.1:8000/api"
+                    // env.ENTERPRISE_CONTAINER_BUILD_REPO = "localhost:5000"
+                    // env.CONCERT_URL = "https://annie-concert1.fyre.ibm.com:12443"
+                    // env.CONCERT_USERNAME = "ibmconcert"
+                    // env.CONCERT_PASSWORD = "password"
+                    // env.CONCERTCTL_CMDB_URL = "http://127.0.0.1:8000/api"
 
                     println("testing auto build - disabled")
                     println "Build WORKSPACE ${WORKSPACE}"
